@@ -7,7 +7,7 @@ log_files = [ sys.stdout, open( "log.txt", "w" ) ]
 def write_to_log_files( string ):
     now_string = datetime.datetime.now().time().strftime( "%H:%M:%S" )
     for log_file in log_files:
-        log_file.write( f"[{now_string}] {string}" )
+        log_file.write( f"[{now_string}] {string}\n" )
 
 def log_error( string ):
     write_to_log_files( f"ERROR:   {string}" )
