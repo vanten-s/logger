@@ -10,13 +10,13 @@ def write_to_log_files( string ):
         log_file.write( f"[{now_string}] {string}" )
 
 def log_error( string ):
-    write_to_log_files( f"ERROR:   {}" )
+    write_to_log_files( f"ERROR:   {strings}" )
 
 def log_info( string ):
-    write_to_log_files( f"INFO:    {}" )
+    write_to_log_files( f"INFO:    {strings}" )
 
 def log_warning ( string ):
-    write_to_log_files( f"WARNING: {}" )
+    write_to_log_files( f"WARNING: {strings}" )
 
 def log( func ):
     def logged_function( *args, **kwargs ):

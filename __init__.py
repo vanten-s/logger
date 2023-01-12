@@ -1,3 +1,3 @@
 
-from functions import *
+from logger.functions import *
 
