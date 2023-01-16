@@ -24,10 +24,10 @@ def log( func ):
             return_val = func( *args, **kwargs )
 
         except Exception as e:
-            log_warning( "Function {func.__name__} gave error {e}" )
+            log_warning( f"Function {func.__name__} gave error {e}" )
             return_val = None
 
-        log_info( "Function {func.__name__} was called" )
+        log_info( f"Function {func.__name__} was called" )
 
         return return_val
 
